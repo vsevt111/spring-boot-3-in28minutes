@@ -10,9 +10,7 @@ const person = {
     //function
     printProfile: () => {
         person.profiles.map(
-            (profile)=>{
-                console.log(profile)
-            }
+            profile=>profile
         )
         // console.log(person.profiles[0])
     }

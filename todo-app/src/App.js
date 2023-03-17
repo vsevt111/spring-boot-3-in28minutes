@@ -1,9 +1,10 @@
 // import logo from './logo.svg';
 import './App.css';
 
-import LearningComponent from './components/learning-examples/LearningComponent';
+// import LearningComponent from './components/learning-examples/LearningComponent';
+import TodoApp from './components/todo/TodoApp'
 
-
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 /*
 curly braces to import not export default (name import)
@@ -17,8 +18,8 @@ Babel convert JSX to JS for backward compatabilty
 function App() {
   return (
     <div className="App">
-      My Todo Application
-      <LearningComponent/>
+      <TodoApp/>
+      {/* <PlayingWithProbs property1='value1' property2='value2'/> */}
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -36,5 +37,20 @@ function App() {
     </div>
   );
 }
+
+//{property1: 'value1', property2: 'value2'}
+// function PlayingWithProbs(properties){
+//   console.log(properties);
+//   console.log(properties.property1)
+//   console.log(properties.property2)
+// }
+
+//alternative to get probs value is use deconstructing
+//modern way to get value from probs
+// function PlayingWithProbs({property1,property2}){
+//   console.log(property1)
+//   console.log(property2)
+// }
+
 
 export default App;
